@@ -44,6 +44,7 @@ input#daudzums {
 }
 
 #pievienotPreci {
+    margin-top: 40px;
     margin-left: 860px;
     font-size: 20px;
     height: 30px;
@@ -83,20 +84,16 @@ input#daudzums {
 
 .prece {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    border:black;
-    border-radius: 15px;
-    height: 60px;
+    border:rgb(0, 0, 0);
+    border-radius: 10px;
+    height: 50px;
     width: 75%;
-    padding: 15px;
+    padding: 10px;
     margin: 20px;
-    margin-left: 20px;
     margin-left: 10%;
     background-color: rgba(219, 212, 212, 0.685);
-    font-family: Verdana, sans-serif;
     color: rgb(0, 0, 0);
-    font-size: 20px;
+    
 }
 
 #popvirsraksts {
@@ -105,3 +102,16 @@ input#daudzums {
     font-size: 50px;
 }
 
+.sadala {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    margin: auto;
+    width: 70%;
+    text-align: left;
+}
+
+h4{
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    margin: auto;
+}

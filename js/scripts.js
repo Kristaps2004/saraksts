@@ -32,8 +32,8 @@ function render() {
     for(let i = 0; i < preces.length; i++) {
         let prece = `
         <div class="prece">
-            <h3>nosaukums: ${preces[i].virsraksts}</h3>
-            <h4>daudzums: ${preces[i].daudzums}</h4>
+            <h4 class="sadala">Preces nosaukums: ${preces[i].nosaukums}</h4>
+            <h4>Daudzums: ${preces[i].daudzums}</h4>
         </div>`;
 
         biblioteka.innerHTML += prece;
