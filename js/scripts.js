@@ -7,6 +7,17 @@ window.addEventListener("load", () => {
   render();
 });
 
+const list = document.querySelector("#biblioteka");
+
+list.addEventListener("click", (e) => {
+  if (e.target.className == "izdzest") {
+    const li = e.target.parentElement;
+    li.parentNode.removeChild(li);
+    preces.splice(li, 1);
+    localStorage.setItem("preces", JSON.stringify(preces));
+  }
+});
+
 document.getElementById("jaunaPrece").addEventListener("click", () => {
   POP_UP.style.display = "block";
 });
@@ -30,11 +41,11 @@ function render() {
 
   for (let i = 0; i < preces.length; i++) {
     let prece = `
-        <div class="prece">
+        <li class="prece">
             <h4 class="sadala">Preces nosaukums: ${preces[i].nosaukums}</h4>
             <h4>Daudzums: ${preces[i].daudzums}</h4>
-            <button id="izdzest" onclick="remove(prece)">X</button>
-        </div>`;
+            <button class="izdzest">X</button>
+        </li>`;
 
     biblioteka.innerHTML += prece;
   }
