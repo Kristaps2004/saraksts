@@ -43,7 +43,7 @@ function render() {
     let prece = `
         <li class="prece">
             <h4 class="sadala">Preces nosaukums: ${preces[i].nosaukums}</h4>
-            <h4>Daudzums: ${preces[i].daudzums}</h4>
+            <h4 class="sadalaViens">Daudzums: ${preces[i].daudzums}</h4>
             <button class="izdzest">X</button>
         </li>`;
 
@@ -66,3 +66,6 @@ var toggled = false,
     }
     toggled = !toggled;
   };
+
+document.getElementById("nosaukums").maxLength = "60";
+document.getElementById("daudzums").maxLength = "6";
